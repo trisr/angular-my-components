@@ -29,7 +29,6 @@ export class GroceriesComponent implements OnInit {
   getAllGroceries() {
     this.groceryService.getAllGrocery()
     .pipe(
-      map(results => results),
       takeUntil(this._destroy$),
       catchError(error => {
         console.error('An error occured:', error);
@@ -76,6 +75,14 @@ export class GroceriesComponent implements OnInit {
     .subscribe(data => {
       this.groceryArr = [];
       this.groceryArr.push(data);
+    })
+  }
+
+  reset() {
+    this.grocery$
+    .subscribe(data => {
+      this.groceryArr = [];
+      this.groceryArr = data;
     })
   }
 
