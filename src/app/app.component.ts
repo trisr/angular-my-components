@@ -7,6 +7,7 @@ import {FirstComponent} from './first/first.component';
 import {SecondComponent} from './second/second.component';
 import { CrisisListComponent } from "./crisis-list/crisis-list.component";
 import { HeroesListComponent } from "./heroes-list/heroes-list.component";
+import { ThemeToggleComponent } from './component/theme-toggle/theme-toggle.component';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,8 @@ import { HeroesListComponent } from "./heroes-list/heroes-list.component";
     RouterLinkActive,
     RouterLink,
     CrisisListComponent,
-    HeroesListComponent
+    HeroesListComponent,
+    ThemeToggleComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
