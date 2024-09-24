@@ -5,8 +5,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { GroceriesComponent } from './groceries/groceries.component';
 
 export const routes: Routes = [
+    { path: 'groceries', component: GroceriesComponent },
     { path: 'first-component', component: FirstComponent },
     { path: 'second-component', component: SecondComponent },
     {path: 'crisis-list', component: CrisisListComponent},

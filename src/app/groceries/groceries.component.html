@@ -1,0 +1,21 @@
+<div class="container mx-auto">
+    <h1 class="text-3xl font-bold underline my-4">
+        RxJS Playground
+    </h1>
+    <button (click)="getFirst()" class="border-2 border-sky-500 rounded-lg py-1 px-2 mr-2">
+        Filter First
+    </button>
+    <button (click)="getLast()" class="border-2 border-sky-500 rounded-lg py-1 px-2 mr-2">
+        Filter Last
+    </button>
+    <button (click)="reset()" class="border-2 border-sky-500 rounded-lg py-1 px-2 mr-2">
+        Reset
+    </button>
+    <div *ngIf="groceryArr">
+        <ul>
+            <li *ngFor="let item of groceryArr">
+                {{ item.name }}
+            </li>
+        </ul>
+    </div>
+</div>
