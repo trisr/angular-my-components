@@ -8,6 +8,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { GroceriesComponent } from './groceries/groceries.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { SearchComponent } from './search/search.component';
+import { StopWatchComponent } from './pages/stop-watch/stop-watch.component';
 
 export const routes: Routes = [
     { path: 'groceries', component: GroceriesComponent },
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path: 'crisis-list', component: CrisisListComponent},
     {path: 'heroes-list', component: HeroesListComponent},
     {path: 'todo-list', component: TodoListComponent},
+    { path: 'stop-watch', component: StopWatchComponent },
     { path: 'rxjs', component: RxjsComponent },
     { path: 'search', component: SearchComponent },
     { path: '',   redirectTo: '/first-component', pathMatch: 'full' }, // redirect main page to `first-component`
